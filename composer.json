@@ -7,7 +7,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "a1boroujerdi/php-recommender": "@dev",
+        "a1boroujerdi/php-recommender": "*",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1"
     },
@@ -70,11 +70,6 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "packages/EcomAI/Recommender"
-        }
-    ]
+    "prefer-stable": true
+
 }

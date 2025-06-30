@@ -4,8 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c44b923894578c1da4fb43be6d2cf1b",
+    "content-hash": "fed13b6b852f844b6c6d781d872b580d",
     "packages": [
+        {
+            "name": "a1boroujerdi/php-recommender",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/a1boroujerdi/php-recommender.git",
+                "reference": "5fda60a143046a7bc12676be1aa34200c55792a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/a1boroujerdi/php-recommender/zipball/5fda60a143046a7bc12676be1aa34200c55792a0",
+                "reference": "5fda60a143046a7bc12676be1aa34200c55792a0",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0",
+                "illuminate/database": "^9.0|^10.0|^12.0",
+                "illuminate/support": "^9.0|^10.0|^12.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0|^10.0",
+                "phpunit/phpunit": "^9.0|^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Recommender": "EcomAI\\Recommender\\Facades\\Recommender"
+                    },
+                    "providers": [
+                        "EcomAI\\Recommender\\RecommenderServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "EcomAI\\Recommender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Your Name",
+                    "email": "your.email@example.com"
+                }
+            ],
+            "description": "AI-powered product recommendation system for e-commerce platforms",
+            "support": {
+                "issues": "https://github.com/a1boroujerdi/php-recommender/issues",
+                "source": "https://github.com/a1boroujerdi/php-recommender/tree/v1.0.0"
+            },
+            "time": "2025-06-28T07:24:23+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.13.1",
@@ -442,59 +499,6 @@
                 }
             ],
             "time": "2024-10-09T13:47:03+00:00"
-        },
-        {
-            "name": "ecomai/recommender",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "packages/EcomAI/Recommender",
-                "reference": "5ada3ddc4ba733b43453babebc837e032ae4f5ad"
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^7.0",
-                "illuminate/database": "^9.0|^10.0|^12.0",
-                "illuminate/support": "^9.0|^10.0|^12.0",
-                "php": "^8.1"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^7.0|^8.0|^10.0",
-                "phpunit/phpunit": "^9.0|^10.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "EcomAI\\Recommender\\RecommenderServiceProvider"
-                    ],
-                    "aliases": {
-                        "Recommender": "EcomAI\\Recommender\\Facades\\Recommender"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EcomAI\\Recommender\\": "src/"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "EcomAI\\Recommender\\Tests\\": "tests/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Your Name",
-                    "email": "your.email@example.com"
-                }
-            ],
-            "description": "AI-powered product recommendation system for e-commerce platforms",
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "egulias/email-validator",
@@ -9078,9 +9082,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "ecomai/recommender": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
